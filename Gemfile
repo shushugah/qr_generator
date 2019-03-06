@@ -29,7 +29,9 @@ gem 'jbuilder', '~> 2.5'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-
+gem 'barby', '~> 0.6.6'
+gem 'chunky_png'
+gem 'rqrcode', '~> 0.4.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

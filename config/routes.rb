@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :codes
+  resources :codes, path: '/'
   get 'qr/index'
   get 'qr/show'
   get 'qr/edit'

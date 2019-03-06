@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <strong>Url:</strong>
+  <%= @code.url %>
+</p>
+
+<p>
+  <strong>Short description:</strong>
+  <%= @code.short_description %>
+</p>
+
+<p>
+  <strong>Generated QR Code</strong>
+</p>
+<%= image_tag(@code.generate_qr_code) %>
+<p>
+  <%= link_to 'Download Image', @code.generate_qr_code, download: @code.short_description.parameterize %>
+</p>
+<%= link_to 'Edit', edit_code_path(@code) %> |
+<%= link_to 'Back', codes_path %>
